@@ -27,6 +27,12 @@ endpoints:
     # This is only applicable to REST and WS endpoint types.
     # The path should be relative to the docker context.
     schemaFilePath: openapi.json
+dependencies:
+    connectionReferences:
+    - name: greeting connection
+      resourceRef: service:/hasitha/greeting-service-go-11-7/v1/803f0/PUBLIC
+    - name: db-connection
+      resourceRef: database:test/dev-db
 
 
 
