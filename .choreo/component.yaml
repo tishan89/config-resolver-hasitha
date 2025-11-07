@@ -28,10 +28,7 @@ endpoints:
     # The path should be relative to the docker context.
     schemaFilePath: openapi.json
 
-dependencies:
-    connectionReferences:
-    - name: My DB Connection
-      resourceRef: database:lakidb4
+
 
 
 # configurations:
